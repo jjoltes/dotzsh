@@ -142,7 +142,7 @@ function tab_color() {
   echo -n -e "\033]6;1;bg;blue;brightness;$3\a"
 }
 
-tab_reset() { echo -ne "\033]6;1;bg;*;default\a" }
+tab_reset() { echo -n -e "\033]6;1;bg;*;default\a" }
 
 [[ "$TERM_PROGRAM" != "" ]] && export LC_TERM_PROGRAM="$TERM_PROGRAM"
 [[ "$ITERM_PROFILE" != "" ]] && export LC_TERM_PROFILE="$ITERM_PROFILE"
