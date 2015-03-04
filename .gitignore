@@ -8,4 +8,5 @@
 *.zwc
 *.zwc.old
 modules/*/cache.zsh
+*~
 
